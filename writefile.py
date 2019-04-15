@@ -1,4 +1,5 @@
 import pandas as pd
+
 #Your data
 df = pd.DataFrame( {'Item':['Food','Clothing','Housing','Transportation'], 'Cost':[6000,3000,10000,5000]})
 #Use xlsxwriter
