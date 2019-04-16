@@ -15,6 +15,13 @@ for item, cost in df.iterrows():
 #Write data
 worksheet.write('B6', 'Total:')
 worksheet.write(row+1, 2, '=SUM(C2:C5)')
+#Create a chart
+chart = workbook.add_chart({'type': 'column'})
+#Configure the data to add series
+chart.add_series({'values': '=Sheet1!$C$2:$C$5'})
+#Insert the chart 
+worksheet.insert_chart('E2', chart)
+#Close file
 writer.save()
 
 
