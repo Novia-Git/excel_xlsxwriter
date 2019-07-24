@@ -1,3 +1,3 @@
-## Using pandas to write excel file
+## Using pandas to write an excel file
 ### + insert data
 ### + draw a chart
